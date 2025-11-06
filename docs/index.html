@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BehavioTrack — Data you can trust, privacy you can defend.</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <div class="logo">Behavio<span>Track</span></div>
+      <button class="btn primary" id="demoBtn">Request a Demo</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-content">
+        <h1>Privacy-first behavior tracking for ABA</h1>
+        <p>AI-assisted logging with wearable sensor fusion—no cameras, no compromises.</p>
+        <div class="hero-actions">
+          <button class="btn primary" id="heroDemoBtn">Request a Demo</button>
+          <a class="btn ghost" href="#features">See Features</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="card">
+          <h3>Real-time Nudges</h3>
+          <p>Get gentle prompts like “Possible Elopement” or “Throwing Objects” based on motion, proximity, and sound level patterns.</p>
+        </div>
+        <div class="card">
+          <h3>Auto Notes</h3>
+          <p>Generate 4-for-4 and ABC notes + graphs in one tap to save 30–45 minutes per day.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container split">
+      <div>
+        <h2>The problem</h2>
+        <p>Manual behavior logging is inconsistent, time-consuming, and often restricted from using cameras in school settings.</p>
+      </div>
+      <div>
+        <h2>Our solution</h2>
+        <p>BehavioTrack uses wearable + beacon sensors to pre-label likely events, then lets you confirm with one tap—fast, private, and accurate.</p>
+      </div>
+    </section>
+
+    <section class="container features" id="features">
+      <h2>Key features</h2>
+      <div class="grid">
+        <div class="feature">
+          <h3>AI-assisted logging</h3>
+          <p>Sensor fusion models map signals to your operational definitions—no cameras required.</p>
+        </div>
+        <div class="feature">
+          <h3>Auto session notes</h3>
+          <p>One-tap 4-for-4 and ABC summaries with progress graphs and exportable PDFs.</p>
+        </div>
+        <div class="feature">
+          <h3>Offline & secure</h3>
+          <p>Works without internet; end-to-end encryption with role-based access.</p>
+        </div>
+        <div class="feature">
+          <h3>Caregiver sharing</h3>
+          <p>Simple, permissioned updates for parents, teachers, and supervisors.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container trust">
+      <div class="badges">
+        <span class="badge">HIPAA-aware</span>
+        <span class="badge">FERPA-friendly</span>
+        <span class="badge">No Cameras</span>
+      </div>
+      <blockquote>“I save nearly an hour a day and my notes are audit-ready.” — Maria, RBT</blockquote>
+    </section>
+
+    <section class="container visuals">
+      <h2>Visuals</h2>
+      <div class="imggrid">
+        <figure>
+          <img src="assets/device_concept.png" alt="BehavioTrack device concept" />
+          <figcaption>Wearable device concept (sensor + low-power beacon).</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/dashboard_mock.png" alt="Session dashboard mock" />
+          <figcaption>Mock dashboard: motion & mic levels over time.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/system_diagram.png" alt="System diagram" />
+          <figcaption>System flow: Wearable → App → Cloud → Portals.</figcaption>
+        </figure>
+      </div>
+      <div class="privacy">
+        <img src="assets/privacy_badge.png" alt="Privacy badge" />
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> BehavioTrack — Data you can trust, privacy you can defend.</p>
+    <p><a href="mailto:hello@behaviotrack.app">hello@behaviotrack.app</a></p>
+  </footer>
+
+  <div id="modal" class="modal hidden" aria-hidden="true" role="dialog">
+    <div class="modal-content" role="document">
+      <button class="close" id="closeModal" aria-label="Close">×</button>
+      <h3>Request a Demo</h3>
+      <p>This is a front-end demo. Replace this with your form or chatbot in your project.</p>
+      <form>
+        <label>
+          Name
+          <input type="text" placeholder="Your name" required />
+        </label>
+        <label>
+          Work Email
+          <input type="email" placeholder="you@school.org" required />
+        </label>
+        <label>
+          Organization
+          <input type="text" placeholder="School / Clinic" />
+        </label>
+        <button type="submit" class="btn primary">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
